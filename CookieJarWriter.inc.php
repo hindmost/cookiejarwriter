@@ -110,7 +110,7 @@ class CookieJarWriter
      * @return string|bool
      */
     function addCookie($name, $value, $life = 0) {
-        return $this->setCookie(array($name, $value, $life));
+        return $this->setCookie($name, $value, $life);
     }
 
     /**
@@ -119,6 +119,6 @@ class CookieJarWriter
      * @return bool
      */
     function removeCookie($name) {
-        return $this->setCookie(array($name));
+        return $this->setCookie($name);
     }
 }
